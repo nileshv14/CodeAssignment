@@ -1,26 +1,24 @@
 import java.util.logging.Logger;
 
-class ExecuteTasks implements  Runnable{
+class ExecuteTasks implements Runnable {
 
     Logger log = Logger.getLogger(ExecuteTasks.class.getName());
 
     String taskNumber;
 
-
-    ExecuteTasks(String taskNumber){
+    ExecuteTasks(String taskNumber) {
 
         this.taskNumber = taskNumber;
     }
 
-
     public void run() {
 
-        log.info("executing task number  "+taskNumber);
+        log.info("executing task number  " + taskNumber);
         try {
-            Thread.sleep(5000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        log.info("executed tasks  "+taskNumber);
+        log.info("executed tasks  " + taskNumber);
     }
 }

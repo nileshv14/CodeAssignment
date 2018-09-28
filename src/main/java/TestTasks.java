@@ -22,16 +22,15 @@ public class TestTasks {
 
             if (i == 0) {
 
-                if (i == 0) {
+
                     logger.info("Executing first task " + (i + 1));
-                }
-                logger.info("execution finished ");
+
+                logger.info("execution of task 1 finished ");
             } else if (i == numberOfTasks - 1) {
 
-                logger.info("in the last iteration !");
                 ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor) executorService;
-                int activeCountOfThreads = threadPoolExecutor.getActiveCount();
-                while (activeCountOfThreads != 0) {
+
+                while (threadPoolExecutor.getActiveCount() != 0) {
 
                     TimeUnit.MILLISECONDS.sleep(1000);
                 }
