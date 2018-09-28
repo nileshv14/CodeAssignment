@@ -50,6 +50,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="nileshv14 &lt;nilesh.verma@ofbusiness.in&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -277,6 +282,14 @@
       <option name="presentableId" value="Default" />
       <updated>1538074350363</updated>
     </task>
+    <task id="LOCAL-00001" summary="&quot;code added&quot;">
+      <created>1538129557303</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538129557303</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -340,6 +353,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;code added&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;code added&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
