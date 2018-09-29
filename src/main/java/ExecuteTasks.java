@@ -1,14 +1,19 @@
+import java.util.concurrent.CountDownLatch;
 import java.util.logging.Logger;
 
-class ExecuteTasks implements Runnable {
+public class ExecuteTasks implements Runnable {
 
     Logger log = Logger.getLogger(ExecuteTasks.class.getName());
 
-    String taskNumber;
+    private String taskNumber;
 
-    ExecuteTasks(String taskNumber) {
+    private CountDownLatch countDownLatch;
+
+    ExecuteTasks(String taskNumber, CountDownLatch countDownLatch) {
 
         this.taskNumber = taskNumber;
+
+        this.countDownLatch = countDownLatch;
     }
 
     public void run() {
@@ -19,6 +24,8 @@ class ExecuteTasks implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+        countDownLatch.countDown();
         log.info("executed tasks  " + taskNumber);
     }
 }
